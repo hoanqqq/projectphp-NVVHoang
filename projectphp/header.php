@@ -1,3 +1,9 @@
+<?php 
+  session_start();
+  if(!$_SESSION['user']){
+    header('Location: login.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +25,7 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
-
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css?v3" rel="stylesheet" type="text/css">
 </head>
 
 <body id="page-top">
